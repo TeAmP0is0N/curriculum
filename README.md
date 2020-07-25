@@ -38,10 +38,31 @@ We'd love your help in improving this curriculum. See [CONTRIBUTING](./CONTRIBUT
 
 The following is the approximate sequence of the topics during the program but is always being tuned and optimized so if you have questions, please open an issue.
 
+- [Week 0 - Pre-Work](#week-0---pre-work)
+- [Week 1 - Onboarding &amp; Developer Tools](#week-1---onboarding--developer-tools)
+- [Week 2 - Webpages: HTML &amp; CSS](#week-2---webpages-html--css)
+- [Week 3 - JavaScript Fundamentals](#week-3---javascript-fundamentals)
+- [Week 4 - Intermediate JavaScript](#week-4---intermediate-javascript)
+- [Week 5 - Eventonica &amp; Advanced JavaScript](#week-5---eventonica--advanced-javascript)
+- [Week 6 - Web API's](#week-6---web-apis)
+- [Week 7 - Databases](#week-7---databases)
+- [Week 8 - Eventonica with React](#week-8---eventonica-with-react)
+- [Week 9 - PERN Mini-Project (Postgres Express React Node)](#week-9---pern-mini-project-postgresexpressreactnode)
+- [Week 10 - More PERN &amp; Assessments](#week-10---more-pern--assessments)
+- [Week 11 - Data Structures &amp; Algorithms](#week-11---data-structures--algorithms)
+  - [Data Structures](#data-structures)
+  - [Algorithms](#algorithms)
+- [Week 12 - Final Assessments](#week-12---final-assessments)
+- [Week 13 - Career Week!](#week-13---career-week)
+- [Week 14 - Project Prep Week &amp; Electives](#week-14---project-prep-week--electives)
+- [Weeks 15+ - Final Project](#weeks-15-final-project)
+- [Independent Topics](#independent-topics)
+- [Optional / Elective Lessons](#optional--elective-lessons)
+
 ### Week 0 - Pre-Work
 
 Before beginning the program, apprentices meet weekly for 4 weeks to learn JavaScript fundamentals.
-Apprentices should memorize [**this**](Cheatsheet.md) within the first month.
+Apprentices should memorize [common JavaScript built-in functions](/javascript/common-functions-cheatsheet.md) within the first month.
 
 ### Week 1 - Onboarding & Developer Tools
 
@@ -64,7 +85,7 @@ Apprentices should memorize [**this**](Cheatsheet.md) within the first month.
 1. [Asking Good Questions](/onboarding/asking-good-questions.md)
 1. [Local Development with VS Code](/dev-tools/vscode.md)
 1. [Networking (Career)](/career/networking-career.md)
-1. [How the Internet Works (The Other Kind of Networking)](/networking-computing/how-the-internet-works.md)
+1. [How the Internet Works (The Other Kind of Networking)](/networking-computing/README.md)
 1. [Intro to DNS](/networking-computing/intro-to-dns-ip.md)
 1. One of either: [Living in Open Workspaces](onboarding/living-in-open-workspaces.md) or [Working Remotely](career/working-and-collaborating-remotely.md) depending on program status. 😷
 1. [HTML](/web/html.md)
@@ -81,7 +102,6 @@ Apprentices should memorize [**this**](Cheatsheet.md) within the first month.
 1. [Recipe Page Project: CSS](/projects/recipe-page/phase-2-css-prompt.md)
 1. [Media Queries](/web/media-queries.md)
 1. [UI/UX](/ui-ux-design/ui-ux-design.md)
-1. [Web patterns](/web-patterns/web-patterns.md)
 1. [Bootstrap](/web/bootstrap.md)
 1. [Building Confidence](/career/building-confidence.md)
 1. [Recipe Page Project: Bootstrap](/projects/recipe-page/phase-3-bootstrap-prompt.md)
@@ -104,6 +124,7 @@ Apprentices should memorize [**this**](Cheatsheet.md) within the first month.
 1. [JavaScript 4 - Loops](/javascript/javascript-4-loops.md)
 1. [JavaScript 5 - Switch Statements](/javascript/javascript-5-switch.md)
 1. [JavaScript 6 - Object Literals](/javascript/javascript-6-object-literals.md)
+1. [Datetime](/datetime/datetime.md)
 1. [Basic JavaScript Practice](/javascript/basic-js-practice.md)
 1. [Node](/node-js/node-js.md)
 1. [Testing & TDD](/testing-and-tdd/testing-and-tdd.md)
@@ -111,8 +132,8 @@ Apprentices should memorize [**this**](Cheatsheet.md) within the first month.
 
 ### Week 4 - Intermediate JavaScript
 
+1. [JavaScript DOM Manipulation](/web/js-dom-methods.md) - _formerly jQuery_
 1. [HTML/JS Game Project](/projects/js-html-games.md)
-1. [jQuery](/web/jquery.md)
 1. [a11y: Accessibility](/web/accessibility.md)
 1. [Portfolio Project: Incorporating a11y](/projects/portfolio/portfolio-webpage-2.md)
 1. [JavaScript 7 - Object-Oriented Programming](/javascript/javascript-7-oop.md)
@@ -146,18 +167,17 @@ Apprentices should memorize [**this**](Cheatsheet.md) within the first month.
 1. [Relational Databases](/databases/relational-databases.md)
 1. [Table Relationships and Join Queries by Treehouse](https://teamtreehouse.com/library/querying-relational-databases)
 1. [Adding Tests to your NodeJS project](/testing-and-tdd/integration-testing.md)
-1. [Database Migrations](/databases/database-migrations.md)
 
 ### Week 8 - Eventonica with React
 
 1. [Eventonica Project](/projects/eventonica/eventonica-project.md)
-1. [React Part 1](/react-js/react.md)
+1. [React Lessons](/react-js)
 1. [React Part 2](/projects/eventonica/eventonica-part7-react.md)
 
 ### Week 9 - PERN Mini-Project (Postgres+Express+React+Node)
 
-1. [Deploying to Heroku with React and Node](/deploying/deploying.md)
-1. [Optimizing your React/NodeJS Project](/optimization/optimizing-your-react-node-project.md)
+1. [Deploying to Heroku with React and Node](/deploying/deploying-to-heroku.md)
+1. [Optimizing your React/NodeJS Project](/electives/optimization/optimizing-your-react-node-project.md)
 1. [Enzyme Testing](/testing-and-tdd/enzyme-testing.md)
 
 ### Week 10 - More PERN & Assessments
@@ -166,7 +186,6 @@ Apprentices should memorize [**this**](Cheatsheet.md) within the first month.
 1. Coding assessment
 1. App development assessment
 1. [Recursion](/recursion/recursion.md)
-1. [Asset Optimization](/optimization/optimization.md)
 
 ### Week 11 - Data Structures & Algorithms
 
@@ -224,6 +243,19 @@ Apprentices should memorize [**this**](Cheatsheet.md) within the first month.
 1. [Negotiating](/career/interviewing/negotiating.md)
 1. [Ethics in Software Engineering](/apprenticeship-prep/ethics.md)
 
+### Weeks 15+ Final Project
+
+After Week 14, Participants build a full-stack web application in the course of one month, from inception to production. This includes:
+
+- Creating project planning docs with wireframes
+- Planning out must-have features for their MVP
+- Updating status on their Trello board to meet weekly milestones/sprints
+- Gathering user feedback and adapting their remaining MVP plan
+- Deploying their application to Heroku
+- Recording a compelling demo for the finished product
+
+For more details, see [Final Project](./projects/final-project).
+
 ### Independent Topics
 
 These are not blockers for any of the core sequence and so they are worked into the schedule as time permits.
@@ -239,17 +271,21 @@ These are not blockers for any of the core sequence and so they are worked into 
 
 ### Optional / Elective Lessons
 
-- [SEO: Search Engine Optimization](/seo/seo.md)
-- [Sass](/sass/sass.md)
-- [Python](/python/python.md)
-- [Datetime](/datetime/datetime.md)
-- [Data Visualization](/data-visualization/data-visualization.md)
+- [Sass](/electives/sass.md)
+- [Python](/electives/python.md)
+- [Data Visualization](/electives/data-visualization.md)
 - [Adding Chai/Mocha Tests to your project](/electives/mocha-testing.md)
-- [MongoDB](/databases/mongo-db.md)
-- [Mongoose](/databases/mongoose.md)
-- [Auth0](/oauth/o-auth.md)
-- [Memoization](/runtime-complexity/memoization.md)
-- [Mobile Development](/mobile-development/mobile-development.md)
+- [MongoDB](/electives/databases/mongo-db.md)
+- [Mongoose](/electives/databases/mongoose.md)
+- [Auth0](/electives/oauth/o-auth.md)
+- [Authorization](/electives/oauth/authorization.md)
+- [Memoization](/electives/memoization.md)
+- [Mobile Development](/electives/mobile-development.md)
+- [web-patterns](/electives/web-patterns.md)
+- [Database Migrations](/electives/databases/database-migrations.md)
+- [backend](/electives/1_intro_to_backend.md)
+- [angular](/electives/angular.md)
+- [Intro to Optimization](/electives/optimization/optimization.md)
 
 ### Creative Commons Open-Source License
 

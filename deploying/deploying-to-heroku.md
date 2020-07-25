@@ -12,10 +12,11 @@ About 3-4.5 hours
 - [Node](../node-js/node-js.md)
 - [Express](../express-js/express.md)
 - [PostgreSQL](../databases/installing-postgresql.md)
+- [A free Heroku account](https://signup.heroku.com/dc)
 
 ### Motivation
 
-Deployment is a fancy term for getting your website on the web. After building out your app, you might want to share it with others and to do that you need to deploy your app to the web where others can access it. In this lesson, we'll learn more about deployment and learn one way to deploy an app.
+Deployment is a fancy term for getting your website on the web. After building out your app, you might want to share it with others and to do that you need to deploy your app to the web where others can access it. In this lesson, we'll learn more about deployment, and learn one way to deploy an app.
 
 ### Objectives
 
@@ -32,7 +33,7 @@ Deployment is a fancy term for getting your website on the web. After building o
 
 - [Video - What is Heroku (4 mins watch)](https://youtu.be/r5ZUQvl9BtE)
 - [Techtonica Slides: Deploying](https://docs.google.com/presentation/d/1Enwhd9hl1fn1-afMXJ6xvkJm5SDJpHjfQoA7s2znHpw/edit?usp=sharing)
-- [Deploy Node.JS Apps to Heroku (10 mins Video)](https://youtu.be/AZNFox2CvBk)
+- [Deploy Node.JS Apps to Heroku (10 min Video)](https://youtu.be/AZNFox2CvBk)
 
 ### Lesson
 
@@ -45,11 +46,11 @@ Deployment is a fancy term for getting your website on the web. After building o
 
 Now we'll work on deploying your app to Heroku.
 
-We'll be combining your front-end (create-react-app) with your back-end (express) and deploying it to Heroku. Your front-end contains "static" JavaScript files -- when you deploy to Heroku, it turns your whole React app into a couple of static files that it will serve to the browser. No matter what data you have in the database, these files will always be the same.
+We'll be combining your frontend (create-react-app) with your backend (express) and deploying it to Heroku. Your frontend contains "static" JavaScript files -- when you deploy to Heroku, Heroku turns your whole React app into a couple of static files that it will serve to the browser. No matter what data you have in the database, these files will always be the same.
 
 Your backend, on the other hand, is dynamic -- when you make an API request, the backend runs javascript code to do things like reading and writing to a database. Unlike the React app, which always serves the same files to the browser, the backend will serve different information to the browser depending on what's in the database. We're going to combine your dynamic code (express), with your static code (create-react-app).
 
-1. cd into the React app and create 2 new directories `client` and `server`, then move _everything_ into the directory `client`:
+1. cd into the React app you created and move _everything_ into a new directory named `client`:
 
 ```
 cd <my react app>
@@ -117,7 +118,7 @@ This block of code only runs in production. When it runs, it will serve your Jav
 
 ```json
     "start": "node server/server.js",
-    "heroku-postbuild": "npm install --only=dev --no-shrinkwrap && npm run build"
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
 ```
 
 You can replace `node server/server.js` with whatever you named your API code
@@ -127,14 +128,8 @@ file.
     Through the Heroku web UI, create a new Application.
     Once you create the app, add the Postgres add-on by going to the Resources tab
     and searching in the "Add-ons" search box for Postgres.
-    Click the "Heroku Postgres" option. Finally, select the free version and click "Provision". 
-    Or you can create a new Application from the CLI. To create an application with name, install the Heroku CLI and run the following command
-    ```heroku create app_name```
-    This command will only be used on an initialized git repository. In that case, the command creates the application as well as a git remote, that you can use to push your code to Heroku:
-    ```mkdir example
-      cd example
-      git init
-      heroku apps:create app_name
+    Click the "Heroku Postgres" option. Finally, select the free version and click
+    "Provision".
 
 8.  Install the Heroku CLI: `brew tap heroku/brew && brew install heroku` then use `heroku login`
 
@@ -165,8 +160,11 @@ database URL when your app is running locally.
 12. Commit everything!
 
 ```
-git add -a
-git commit -m "Heroku setup\!"
+git add server
+git add client
+git add package.json
+
+git commit -am "Heroku setup\!"
 ```
 
 Ensure you don't have any missing files: `git status` and commit them if you need to.
@@ -174,7 +172,7 @@ Ensure you don't have any missing files: `git status` and commit them if you nee
 13. Deploy your app!
     `git push heroku master`
     This takes a long time.
-    This will print the URL your app was deployed to. Try going to it! If something goes wrong, use `heroku logs --tail` to debug.
+    This will print the URL your app was deployed to. Trying going to it! If something goes run, use `heroku logs --tail` to debug.
 
 ### Wrapping Up
 
@@ -196,3 +194,4 @@ All done! Small differences in the way you've set up your site may make bits of 
 
 - [Tutorial - Heroku Dev Center Deployment](https://devcenter.heroku.com/articles/deploying-nodejs)
 - [Overview of Deployment Options - MDN Express & Node Deployment](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/deployment)
+- [Code School Tutorial(requires sign-in) - Domain Names,Name Servers, and Cloud Based Servers](https://www.codeschool.com/beginners-guide-to-web-development/deploying-your-first-website)
